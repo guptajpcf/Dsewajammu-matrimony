@@ -1,0 +1,16 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Digital Sewa Matrimony | Dsewajammu.com - Free Jammu Matrimony",
+  description: "100% Free matrimony service for Jammu. Find your life partner on Dsewajammu.com by Digital Sewa. Verified profiles, horoscope match, admin approved photos.",
+  keywords: "Jammu matrimony, Digital Sewa matrimony, free matrimony Jammu, Dsewajammu",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className="bg-gray-50 text-gray-900">{children}</body>
+    </html>
+  );
+}
