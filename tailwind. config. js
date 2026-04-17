@@ -1,0 +1,17 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'dsewa-orange': '#F05A28',
+        'dsewa-blue': '#2A3B8F',
+        'dsewa-navy': '#1A2456',
+      },
+    },
+  },
+  plugins: [],
+}
