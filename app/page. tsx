@@ -1,0 +1,56 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-dsewa-orange rounded-full flex items-center justify-center text-white font-bold">DS</div>
+            <h1 className="text-xl font-bold text-dsewa-blue">Digital Sewa Matrimony</h1>
+          </div>
+          <Link href="/login" className="bg-dsewa-orange text-white px-4 py-2 rounded-lg font-semibold">
+            Login / Register
+          </Link>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="bg-dsewa-navy text-white py-16 text-center">
+        <h2 className="text-4xl font-bold mb-4">Find Your Life Partner in Jammu</h2>
+        <p className="text-lg mb-8 text-gray-200">100% Free Matrimony Service by Digital Sewa</p>
+        <div className="max-w-2xl mx-auto bg-white rounded-lg p-2 flex gap-2">
+          <select className="flex-1 text-gray-900 px-3 py-2 rounded">
+            <option>Bride</option>
+            <option>Groom</option>
+          </select>
+          <select className="flex-1 text-gray-900 px-3 py-2 rounded">
+            <option>Age 21-25</option>
+            <option>Age 26-30</option>
+            <option>Age 31-35</option>
+          </select>
+          <button className="bg-dsewa-orange px-6 py-2 rounded-lg font-semibold">Search</button>
+        </div>
+      </section>
+
+      {/* Success Stories Section */}
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <h3 className="text-2xl font-bold text-dsewa-blue mb-6 text-center">Success Stories</h3>
+        <div className="bg-dsewa-blue/5 border-dsewa-blue/20 rounded-lg p-8 text-center">
+          <p className="text-gray-600 mb-4">Share your happy journey with us</p>
+          <p className="text-sm text-gray-500">Stories appear here after admin approval</p>
+          <button className="mt-4 bg-dsewa-orange text-white px-6 py-2 rounded-lg">Submit Your Story</button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-dsewa-navy text-white py-8 mt-12">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <p className="font-semibold">Dsewajammu.com</p>
+          <p className="text-sm text-gray-300 mt-2">A Digital Sewa Initiative | 100% Free Service</p>
+        </div>
+      </footer>
+    </main>
+  );
+}
